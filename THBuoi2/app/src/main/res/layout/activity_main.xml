@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTieuDe"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_TieuDe"
+        android:text="Kéo Búa Giấy"
+        android:textAlignment="center"
+        android:textColor="@color/tx_TD"
+        android:textSize="20pt"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUnderline"
+        android:layout_width="0pt"
+        android:layout_height="2dp"
+        android:background="@drawable/underline_red"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTieuDe" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn ra gì?"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15pt"
+        app:layout_constraintBottom_toTopOf="@id/btnBua"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintLeft_toLeftOf="@id/tvTieuDe"
+        app:layout_constraintRight_toRightOf="@id/tvTieuDe"
+        app:layout_constraintTop_toBottomOf="@id/tvUnderline"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/btnKeo"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bg_Stop"
+        android:text="KÉO"
+        android:layout_margin="5dp"
+        android:textColor="@color/tx_Keo"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@id/btnStop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUnderline"
+        app:layout_constraintRight_toLeftOf="@id/btnBua"/>
+
+    <Button
+        android:id="@+id/btnBua"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bg_Stop"
+        android:text="BÚA"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/tx_Bua"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@id/btnStop"
+        app:layout_constraintLeft_toRightOf="@+id/btnKeo"
+        app:layout_constraintTop_toBottomOf="@id/tvUnderline"
+        app:layout_constraintRight_toLeftOf="@id/btnGiay"/>
+
+    <Button
+        android:id="@+id/btnGiay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bg_Stop"
+        android:text="GIẤY"
+        android:layout_margin="5dp"
+        android:textColor="@color/tx_Giay"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@id/btnStop"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnBua"
+        app:layout_constraintTop_toBottomOf="@id/tvUnderline" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NGHỈ CHƠI"
+        android:textSize="15pt"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_Stop"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

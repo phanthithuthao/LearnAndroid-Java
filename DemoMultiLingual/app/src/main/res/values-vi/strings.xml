@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ví Dụ Đa Ngữ</string>
+    <string name="time_out">Hết Giờ!</string>
+    <string name="go_home">Về Nhà Thôi!</string>
+</resources>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiHori175"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.175" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiHori340"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.340" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiHori505"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.505" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiHori670"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.670" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiHori835"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.835" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiVer250"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiVer500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiVer750"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:background="@color/bg_screen"
+        android:gravity="center_vertical|end"
+        android:paddingLeft="10pt"
+        android:paddingRight="10pt"
+        android:text="0"
+        android:textColor="@color/tx_screen"
+        android:textSize="14pt"
+        app:layout_constraintBottom_toTopOf="@id/guiHori175"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/num7"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="7"
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guiHori505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guiVer250"
+        app:layout_constraintTop_toBottomOf="@+id/guiHori340" />
+
+    <Button
+        android:id="@+id/memMinus"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="M-"
+        android:textColor="@color/tx_mem"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori340"
+        app:layout_constraintLeft_toRightOf="@id/guiVer250"
+        app:layout_constraintRight_toRightOf="@id/guiVer500"
+        app:layout_constraintTop_toBottomOf="@id/guiHori175" />
+
+    <Button
+        android:id="@+id/memMC"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="MC"
+        android:textColor="@color/tx_mem"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori340"
+        app:layout_constraintLeft_toRightOf="@id/guiVer500"
+        app:layout_constraintRight_toRightOf="@id/guiVer750"
+        app:layout_constraintTop_toBottomOf="@id/guiHori175" />
+
+    <Button
+        android:id="@+id/AC"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="AC"
+        android:textColor="@color/tx_ac"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori340"
+        app:layout_constraintLeft_toRightOf="@id/guiVer750"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guiHori175" />
+
+    <Button
+        android:id="@+id/memPlus"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="M+"
+        android:textColor="@color/tx_mem"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guiHori340"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guiVer250"
+        app:layout_constraintTop_toBottomOf="@+id/guiHori175" />
+
+    <Button
+        android:id="@+id/num8"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="8"
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori505"
+        app:layout_constraintLeft_toRightOf="@id/guiVer250"
+        app:layout_constraintRight_toRightOf="@id/guiVer500"
+        app:layout_constraintTop_toBottomOf="@id/guiHori340" />
+
+    <Button
+        android:id="@+id/num9"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="9"
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori505"
+        app:layout_constraintLeft_toRightOf="@id/guiVer500"
+        app:layout_constraintRight_toRightOf="@id/guiVer750"
+        app:layout_constraintTop_toBottomOf="@id/guiHori340" />
+
+    <Button
+        android:id="@+id/charDiv"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="/"
+        android:textColor="@color/tx_ope"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori505"
+        app:layout_constraintLeft_toRightOf="@id/guiVer750"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guiHori340" />
+    <Button
+        android:id="@+id/num4"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="4"
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guiHori670"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guiVer250"
+        app:layout_constraintTop_toBottomOf="@+id/guiHori505" />
+    <Button
+        android:id="@+id/num5"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="5"
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori670"
+        app:layout_constraintLeft_toRightOf="@id/guiVer250"
+        app:layout_constraintRight_toRightOf="@id/guiVer500"
+        app:layout_constraintTop_toBottomOf="@id/guiHori505" />
+
+    <Button
+        android:id="@+id/num6"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="6"
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori670"
+        app:layout_constraintLeft_toRightOf="@id/guiVer500"
+        app:layout_constraintRight_toRightOf="@id/guiVer750"
+        app:layout_constraintTop_toBottomOf="@id/guiHori505" />
+
+    <Button
+        android:id="@+id/charMultiply"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="X"
+        android:textColor="@color/tx_ope"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori670"
+        app:layout_constraintLeft_toRightOf="@id/guiVer750"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guiHori505" />
+    <Button
+        android:id="@+id/num1"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guiHori835"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guiVer250"
+        app:layout_constraintTop_toBottomOf="@+id/guiHori670" />
+    <Button
+        android:id="@+id/num2"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori835"
+        app:layout_constraintLeft_toRightOf="@id/guiVer250"
+        app:layout_constraintRight_toRightOf="@id/guiVer500"
+        app:layout_constraintTop_toBottomOf="@id/guiHori670" />
+
+    <Button
+        android:id="@+id/num3"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori835"
+        app:layout_constraintLeft_toRightOf="@id/guiVer500"
+        app:layout_constraintRight_toRightOf="@id/guiVer750"
+        app:layout_constraintTop_toBottomOf="@id/guiHori670" />
+
+    <Button
+        android:id="@+id/charMinus"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="-"
+        android:textColor="@color/tx_ope"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guiHori835"
+        app:layout_constraintLeft_toRightOf="@id/guiVer750"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guiHori670" />
+    <Button
+        android:id="@+id/num0"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guiHori835"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guiVer250"
+         />
+    <Button
+        android:id="@+id/charDot"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="."
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guiHori835"
+        app:layout_constraintLeft_toLeftOf="@id/guiVer250"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guiVer500"
+        />
+    <Button
+        android:id="@+id/charEQ"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="="
+        android:textColor="@color/tx_ope"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guiHori835"
+        app:layout_constraintLeft_toLeftOf="@id/guiVer500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guiVer750"
+        />
+    <Button
+        android:id="@+id/charPlus"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/bg_btn"
+        android:text="+"
+        android:textColor="@color/tx_ope"
+        android:textSize="13pt"
+        app:cornerRadius="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guiHori835"
+        app:layout_constraintLeft_toLeftOf="@id/guiVer750"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

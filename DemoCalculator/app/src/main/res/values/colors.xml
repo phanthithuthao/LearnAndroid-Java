@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bg_screen">#909090</color>
+    <color name="bg_btn">#C0C0C0</color>
+    <color name="tx_screen">#FFFFFF</color>
+    <color name="tx_mem">#FF9900</color>
+    <color name="tx_num">#000000</color>
+    <color name="tx_ope">#FF000D</color>
+    <color name="tx_ac">#0000FF</color>
+</resources>

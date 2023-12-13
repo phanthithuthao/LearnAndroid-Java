@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Demo MultiLingual</string>
+    <string name="time_out">Time Out!</string>
+    <string name="go_home">Go Home!</string>
+</resources>

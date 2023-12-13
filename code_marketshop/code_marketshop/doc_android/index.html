@@ -1,0 +1,472 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Markeet - Android 2.1</title>
+	
+	<meta name="description" content="Thank you for purchasing my item. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page. Thanks so much! ">
+	<meta name="author" content="dream_space">
+	<meta name="copyright" content="dream_space">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2018-02-18T00:00:00+01:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-markeet-android-21">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#package_organize" title="1. Package Organize">1. Package Organize</a></li>
+			<li><a href="#configure_firebase" title="2. Configure Firebase">2. Configure Firebase</a></li>
+			<li><a href="#customize_api_url" title="Customize API url">Customize API url</a></li>
+			<li><a href="#validate_your_web" title="Validate Your Web">Validate Your Web</a></li>
+			<li><a href="#security" title="Security">Security</a></li>
+			<li><a href="#price_format" title="Price Format">Price Format</a></li>
+			<li><a href="#tint_category_icon" title="Tint Category Icon">Tint Category Icon</a></li>
+			<li><a href="#sqlite_database" title="SQLite Database">SQLite Database</a></li>
+			<li><a href="#ads" title="Ads">Ads</a></li>
+			<li><a href="#custom_color" title="Custom Color">Custom Color</a></li>
+			<li><a href="#changelog" title="ChangeLog">ChangeLog</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright dream_space 2018<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Markeet - Android 2.1</h1>
+	
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 06/09/2015</li>
+	<li>latest update: 02/18/2018</li>
+	<li>by: dream_space</li>
+	
+	<li>email: <a href="mailto:&#100;&#101;&#118;&#46;&#100;&#114;&#101;&#97;&#109;&#46;&#115;&#112;&#97;&#99;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#100;&#101;&#118;&#46;&#100;&#114;&#101;&#97;&#109;&#46;&#115;&#112;&#97;&#99;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p>Thank you for purchasing my item. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page. Thanks so much! </p>
+	</section>
+	
+	<section id="package_organize">
+	<div class="page-header"><h3>1. Package Organize</h3><hr class="notop"></div>
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">Whole project is organize by their package, the main fuctional can known by package name.</span></p>
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;"><img alt="" src="assets/images/image_3.jpg" style="width: 400px; height: 617px;"></span></p>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-plain linenums">
+ - All Activity Class placed on <strong>com.app.markeet</strong>
+ - Adapter for Gridview, ListView, Image List etc, on <strong>com.app.markeet.adapter</strong>
+ - All class related REST API request on <strong>com.app.markeet.connection</strong>
+ - The supporting data like, config, constant, database <strong>com.app.markeet.data</strong>
+ - Fragment page placed on <strong>com.app.markeet.fragment</strong>
+ - FCM notification Handler on <strong>com.app.markeet.fcm</strong>
+ - All Object Model placed on <strong>com.app.markeet.model</strong>
+ - Internet detector, callback class, and snippet <strong>com.app.markeet.utils</strong>
+ - custom widget class placed on <strong>com.app.markeet.widget</strong></pre>
+<p>
+	&nbsp;</p>
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">This will make developer easy to find any class and customize.</span></p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>RENAME PACKAGE</strong></p>
+<p>
+	We not recomend you to rename your physical package, if you want to upload into google play you only need to change <strong>applicationId</strong> at gradle file, here the tutorial how to rename package&nbsp;</p>
+<p>
+	<a href="http://blog.dream-space.web.id/?p=62">http://blog.dream-space.web.id/?p=62</a></p>
+<p>
+	In case you rename physical package you must rename package at fullscreen image item</p>
+<p>
+	<img alt="" src="assets/images/image_6.jpg" style="width: 800px; height: 344px;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="configure_firebase">
+	<div class="page-header"><h3>2. Configure Firebase</h3><hr class="notop"></div>
+<p>	Configure firebase is very<strong> IMPORTANT</strong> for this project, From this firebase configuration you will get 2 feature,<br>
+	Make sure you already rename your package at previous section.</p>
+<p>	<strong>1. Firebase Analytics</strong></p>
+<p>	<strong>2. Firebase Push Notification / Firebase Cloud Messaging (FCM)</strong></p>
+<p>	&nbsp;</p>
+<p>	Here you can follow this article :&nbsp;<a href="http://blog.dream-space.web.id/?p=116"><strong>http://blog.dream-space.web.id/?p=116</strong></a></p>
+<p>	<strong>a. [ADMIN PANEL]</strong></p>
+<p>	You will get&nbsp;FCM API KEY for admin panel need ( you can read tutorial at doc_admin... )</p>
+<p>	&nbsp;</p>
+<p>	<strong>b. [ANDROID]</strong></p>
+<p>	Then you need to generate file <strong>google-services.json</strong> for android project,&nbsp;<a href="http://blog.dream-space.web.id/?p=121"><strong>http://blog.dream-space.web.id/?p=121</strong></a></p>
+</section>
+<section id="customize_api_url">
+	<div class="page-header"><h3>Customize API url</h3><hr class="notop"></div>
+<div>
+	<strong>#CUSTOMIZE</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	Please open <strong>com.app.markeet.data.Constant.java</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong><img alt="" src="assets/images/image_1.jpg" style="width: 300px; height: 279px;"></strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	set domain in example your web url is :</div>
+<pre class="prettyprint lang-plain linenums">
+<strong> http://your-domain.com/project/markeet_panel/</strong></pre>
+<div>
+	&nbsp;</div>
+<div>
+	please set WEB_URL like this :</div>
+<pre class="prettyprint lang-plain linenums">
+ private static String WEB_URL = &quot;http://your-domain.com/project/markeet_panel/&quot;;</pre>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="validate_your_web">
+	<div class="page-header"><h3>Validate Your Web</h3><hr class="notop"></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">#CHECKING YOUR URL WORKS :</span></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	Before you check this make sure that your web hosting able to run&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">.htaccess&nbsp;</span>file&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	1. Check database connection :</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp; &nbsp;Make sure your web response &quot;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">Database Connection : Success</span>&quot; like this :&nbsp;<a href="http://demo.dream-space.web.id/markeet_panel/services/checkResponse"><strong>http://demo.dream-space.web.id/markeet_panel/services/checkResponse</strong></a></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline;">
+		&nbsp; &nbsp; &nbsp;When you open :</div>
+	<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline;">
+		<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">&nbsp; &nbsp; &nbsp;www.your-domain.com/markeet_folder + /services/checkResponse</span></div>
+</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	2. Check respon wil be JSON text like this :&nbsp;<a href="http://demo.dream-space.web.id/markeet_panel/services/listCategory"><strong>http://demo.dream-space.web.id/markeet_panel/services/listCategory</strong></a></div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp;</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	&nbsp; &nbsp; &nbsp;When you open :</div>
+<div style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+	<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">&nbsp; &nbsp; &nbsp;www.your-domain.com/markeet_folder + /services/listCategory</span></div>
+</section>
+<section id="security">
+	<div class="page-header"><h3>Security</h3><hr class="notop"></div>
+<p>	Since version 1.1 we implement security scheme to prevent spam submission for Order and Fcm User. We use security code that use for both side android and server. Security code is secret data, so you should not share to anyone without authorization.</p>
+<p>	You can generate your new one from this site :&nbsp;<strong><a href="http://www.unit-conversion.info/texttools/random-string-generator/">http://www.unit-conversion.info/texttools/random-string-generator/</a></strong></p>
+<p>	We recommeded you to use Alpha Numeric string with length 100</p>
+<p>	<img alt="" src="assets/images/image_7.png" style="width: 500px; height: 324px; border-width: 1px; border-style: solid;"></p>
+<p>	&nbsp;</p>
+<p>	<strong># SERVER</strong></p>
+<p>	You can change SECURITY_CODE from file <strong>/services/conf.php</strong></p>
+<p>	<img alt="" src="assets/images/image_2.jpg" style="width: 700px; height: 508px;"></p>
+<p>	&nbsp;</p>
+<p>	<strong># ADNROID</strong></p>
+<p>	Then for android you can set SECURITY_CODE at file <strong>/data/Constant.java</strong></p>
+<p>	<strong><img alt="" src="assets/images/image_5.png" style="width: 700px; height: 219px;"></strong></p>
+<p>	&nbsp;</p>
+<p>	<strong>[ IMPORTANT ]</strong><em><strong> Again, you must make sure both of SECURITY_CODE is same</strong></em></p>
+<p>	&nbsp;</p>
+</section>
+<section id="price_format">
+	<div class="page-header"><h3>Price Format</h3><hr class="notop"></div>
+<p>	Starting version 2.0 you can change price format with 4 options</p>
+<pre class="prettyprint lang-plain linenums">
+ USD 2,365.12 --&gt; Front curency US format
+ USD 2.365,12 --&gt; Front curency GERMANY format
+ 2,365.12 USD --&gt; End curency US format
+ 2.365,12 USD --&gt; End curency GERMANY format</pre>
+<div>
+	&nbsp;</div>
+<div>
+	You can chose that format by edit&nbsp;<strong>AppConfig.java&nbsp;</strong>, The code well commencted to you can choose with easily</div>
+<div>
+	&nbsp;</div>
+<div>
+	<img alt="" src="assets/images/image_4.jpg"  ></div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="tint_category_icon">
+	<div class="page-header"><h3>Tint Category Icon</h3><hr class="notop"></div>
+<p>	Tint image is convert color from an image into single color, in example into white color, tint color will works at png file with backgroudn transparent.&nbsp;</p>
+<p>	we use tint color to make beatiful user interface, but if your icon has multiple color and has not transparent background you can disable tint color at <strong>AppConfig.java</strong></p>
+<p>	&nbsp;</p>
+<pre class="prettyprint lang-plain linenums">
+public class AppConfig {
+    . . .
+    public static final boolean TINT_CATEGORY_ICON = false;
+}</pre>
+<p>	&nbsp;</p>
+</section>
+<section id="sqlite_database">
+	<div class="page-header"><h3>SQLite Database</h3><hr class="notop"></div>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Some data we store at local database android(SQLite). Here list data we manage at local database, this data will be lost when user do app clear data, app uninstall :</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<strong>1. Notification Data</strong> - Menu Notification. All receive notification will be save offline</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<strong>2. Wishlist Data</strong> - Menu Wishlist. When user add product to wishlist data will be store here.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<strong>3. Order Data</strong> - Menu Order History. After user submit their order to server all the data will be save here.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	<strong>4 Cart Data</strong> - Menu Shopping Cart. When user add product to cart all the data product will be save here. Cart Data also save order details from Order Data.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	You can see the detail from sqlite table at <strong>data/DatabaseHandler.java</strong></p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	&nbsp;</p>
+</section>
+<section id="ads">
+	<div class="page-header"><h3>Ads</h3><hr class="notop"></div>
+<div>
+	<strong># CONFIG ADSENSE</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	ADMOB BANNER, for banner is appear in ActivityPlaceDetails . please change &nbsp;the ID in <strong>res/value/string.xml </strong>admob banner</div>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-plain linenums">
+&lt;string name=&quot;banner_ad_unit_id&quot;&gt;ca-app-pub-46199952.......&lt;/string&gt;</pre>
+<p>	&nbsp;</p>
+<div>
+	interstitial ADS, this ads is appear when drawer menu open, change the ID in <strong>res/value/string.xml</strong></div>
+<pre class="prettyprint lang-plain linenums">
+&lt;string name=&quot;interstitial_ad_unit_id&quot;&gt;ca-app-pub-4619995241......&lt;/string&gt;</pre>
+<p>	&nbsp;</p>
+<p>	<strong># DISABLE ADSENSE</strong></p>
+<p>	new we make easy way to disable or enable adsense in the app, you only need to set boolean value with TRUE or FALSE.</p>
+<p>	<strong>open file data/AppConfig.java</strong></p>
+<pre class="prettyprint lang-plain linenums">
+public class AppConfig {
+    // flag for display ads
+    public static final boolean ADS_MAIN_INTERSTITIAL = true;
+    public static final int ADS_MAIN_INTERSTITIAL_INTERVAL = 10; // in second
+    public static final boolean ADS_NEWS_INFO_DETAILS = true;
+    public static final boolean ADS_PRODUCT_DETAILS = true;
+    . . . 
+    . . . 
+    . . . 
+}</pre>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="custom_color">
+	<div class="page-header"><h3>Custom Color</h3><hr class="notop"></div>
+<div>
+	In Material Design Rule we should define any color that used in app. For All project you can customize your own color by editing<strong> res/values/color.xml&nbsp;</strong></div>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-plain linenums">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;resources&gt;
+
+    &lt;color name=&quot;colorPrimary&quot;&gt;#568AB7&lt;/color&gt;
+    &lt;color name=&quot;colorPrimaryDark&quot;&gt;#4576a1&lt;/color&gt;
+    &lt;color name=&quot;colorPrimaryLight&quot;&gt;#709cc2&lt;/color&gt;
+
+    &lt;color name=&quot;colorAccent&quot;&gt;#E6C14D&lt;/color&gt;
+    &lt;color name=&quot;colorAccentDark&quot;&gt;#C4A035&lt;/color&gt;
+    &lt;color name=&quot;colorAccentLight&quot;&gt;#FEEAAB&lt;/color&gt;
+
+&lt;/resources&gt;</pre>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="changelog">
+	<div class="page-header"><h3>ChangeLog</h3><hr class="notop"></div>
+<div>
+	This section will start next section. You can use this tools to compare file change&nbsp;<a href="https://www.diffchecker.com/">https://www.diffchecker.com/</a></div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong># VERSION 2.1</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	-&nbsp; No Change</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong># VERSION 2.0</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	1. Update File
+	<pre class="prettyprint lang-plain linenums">
+  - build.gradle
+  - app/build.gradle
+  - AndroidManifest.xml
+  - ThisApplication.java
+  - ActivityProductDetails.java
+  - ActivitySettings.java
+  - ActivityCheckout.java
+  - ActivityShoppingCart.java
+  - ActivityDialogNotification.java
+  - adapter/AdapterOrderHistory.java
+  - adapter/AdapterShoppingCart.java
+  - adapter/AdapterProduct.java
+  - data/AppConfig.java
+  - data/DatabaseHandler.java
+  - model/Notification.java
+  - model/Order.java
+  - model/Product.java
+  - model/ProductOrder.java
+  - fcm/FcmMessagingService.java
+  - utils/Tools.java
+  - layout/activity_main.xml
+  - layout/activity_category_details.xml
+  - layout/activity_checkout.xml
+  - layout/activity_dialog_notification.xml
+  - layout/activity_search.xml
+  - layout/activity_shopping_cart.xml
+  - layout/dialog_cart_option.xml
+  - layout/dialog_info.xml
+  - layout/dialog_order_history_details.xml
+  - layout/include_checkout_cost.xml
+  - layout/include_checkout_form.xml
+  - layout/include_product_content.xml
+  - layout/include_checkout_order.xml
+  - layout/include_main_content.xml
+  - layout/item_product.xml
+  - layout/item_category.xml
+  - layout/item_news_info.xml
+  - layout/item_notification.xml
+  - layout/item_order_history.xml
+  - layout/item_shopping_cart.xml
+  - layout/item_wishlist.xml
+  - values/strings.xml</pre>
+</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong># VERSION 1.1</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	<div>
+		1. Updated Files :&nbsp;</div>
+	<pre class="prettyprint lang-plain linenums">
+ - app/build.gradle
+ - ActivityCheckout.java
+ - ActivityMain.java
+ - ActivityProductDetails.java
+ - ActivitySettings.java
+ - ThisApplication.java
+ - AdapterOrderHistory.java
+ - connection/API.java
+ - data/AppConfig.java
+ - data/Constant.java
+ - layout/activity_checkout.xml
+ - layout/activity_product_details.xml
+ - layout/fragment_category.xml
+ - layout/fragment_featured_news.xml
+ - layout/include_news_info_content.xml
+ - layout/include_product_content.xml
+ - layout/item_instruction_slider.xml
+ - layout/item_shopping_cart.xml
+ - values/colors.xml
+ - values/strings.xml
+ - xml/setting_preferences.xml
+</pre>
+	<div>
+		2. Renamed Files :</div>
+	<pre class="prettyprint lang-plain linenums">
+ - drawable/ { about_img_1.png &rarr; intro_img_1.png }
+ - drawable/ { about_img_2.png &rarr; intro_img_2.png }
+ - drawable/ { about_img_3.png &rarr; intro_img_3.png }
+ - drawable/ { about_img_4.png &rarr; intro_img_4.png }
+</pre>
+	<p>
+		&nbsp;</p>
+</div>
+<p>
+	&nbsp;</p>
+</section>
+
+	</div>
+</body>
+</html>

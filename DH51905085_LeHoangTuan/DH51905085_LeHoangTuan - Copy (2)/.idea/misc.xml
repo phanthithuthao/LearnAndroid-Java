@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/zalo/DH51905085_LeHoangTuan - Copy (2)/app/src/main/res/layout/acitivity_them_sua_nhanvien.xml" value="0.15925925925925927" />
+        <entry key="..\:/zalo/DH51905085_LeHoangTuan - Copy (2)/app/src/main/res/layout/acitivity_them_sua_sinhvien.xml" value="0.23854166666666668" />
+        <entry key="..\:/zalo/DH51905085_LeHoangTuan - Copy (2)/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/zalo/DH51905085_LeHoangTuan/app/src/main/res/layout/acitivity_them_sua_sinhvien.xml" value="0.2" />
+        <entry key="..\:/zalo/DH51905085_LeHoangTuan/app/src/main/res/layout/activity_main.xml" value="0.11145833333333334" />
+        <entry key="..\:/zalo/Tuan05/app/src/main/res/drawable/ic_launcher_background.xml" value="0.182" />
+        <entry key="..\:/zalo/Tuan05/app/src/main/res/layout/acitivity_them_sua_congviec.xml" value="0.2" />
+        <entry key="..\:/zalo/Tuan05/app/src/main/res/layout/acitvity_them_sua_congviec.xml" value="0.2" />
+        <entry key="..\:/zalo/Tuan05/app/src/main/res/layout/activity_main.xml" value="0.16" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

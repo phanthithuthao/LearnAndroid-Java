@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/tvTenSV"
+        android:layout_width="wrap_content"
+        android:layout_height="0pt"
+        android:gravity="center_vertical"
+        android:text="Tên SV:"
+        android:textSize="13pt"
+        app:layout_constraintBottom_toBottomOf="@id/etTenSV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTenSV"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên sinh viên"
+        android:textSize="13pt"
+        app:layout_constraintLeft_toRightOf="@id/tvTenSV"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTenSV" />
+
+    <TextView
+        android:id="@+id/tvNS"
+        android:layout_width="wrap_content"
+        android:layout_height="0pt"
+        android:text="Ngày sinh:"
+        android:textSize="13pt"
+        app:layout_constraintBottom_toBottomOf="@id/etNS"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTenSV" />
+
+    <EditText
+        android:id="@+id/etNS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MMM dd,yyyy"
+        android:textColor="#0000FF"
+        android:textSize="12pt"
+        app:layout_constraintStart_toEndOf="@+id/tvNS"
+        app:layout_constraintTop_toBottomOf="@id/etTenSV"
+        app:layout_constraintTop_toTopOf="@id/tvNS" />
+
+    <ImageButton
+        android:id="@+id/btnDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_date_picker"
+        app:layout_constraintLeft_toRightOf="@id/etNS"
+        app:layout_constraintTop_toTopOf="@id/etNS" />
+
+    <TextView
+        android:id="@+id/tvST"
+        android:layout_width="wrap_content"
+        android:layout_height="0pt"
+        android:text="Sở thích:"
+        android:textSize="13pt"
+        app:layout_constraintBottom_toBottomOf="@+id/cbAn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNS" />
+    <CheckBox
+        android:id="@+id/cbAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ăn"
+        android:textSize="13pt"
+        app:layout_constraintLeft_toRightOf="@id/tvST"
+        app:layout_constraintTop_toBottomOf="@id/etNS"
+        app:layout_constraintTop_toTopOf="@+id/tvST"/>
+
+    <CheckBox
+        android:id="@+id/cbNgu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngủ"
+        android:textSize="13pt"
+        app:layout_constraintLeft_toRightOf="@id/cbAn"
+        app:layout_constraintTop_toBottomOf="@id/etNS"
+        app:layout_constraintTop_toTopOf="@+id/tvST"/>
+
+    <Button
+        android:id="@+id/btnLuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:textSize="13pt"
+        android:textColor="@color/black"
+        android:backgroundTint="#DCDCDC"
+        app:cornerRadius="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cbAn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

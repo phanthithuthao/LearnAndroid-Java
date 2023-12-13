@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCKMP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Che Khuat Mot Phan"
+        android:backgroundTint="#C0C0C0"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCKTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Che Khuat Toan Bo"
+        android:backgroundTint="#C0C0C0"
+        app:cornerRadius="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btnCKMP"
+        app:layout_constraintRight_toRightOf="@id/btnCKMP"
+        app:layout_constraintTop_toBottomOf="@+id/btnCKMP" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thoat"
+        app:cornerRadius="0dp"
+        android:backgroundTint="#C0C0C0"
+        app:layout_constraintTop_toBottomOf="@+id/btnCKTB" />
+</androidx.constraintlayout.widget.ConstraintLayout>
